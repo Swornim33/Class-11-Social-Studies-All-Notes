@@ -1,0 +1,1 @@
+# Class-11-Social-Studies-All-Notes
