@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 11 Social Studies Notes">
+    <title>All Notes - Class 11 Social Studies</title>
+    <link rel="stylesheet" href="notes.css">
+    <script>
+        // Function to open the PDF viewer
+        function openPDF(pdfPath) {
+            const viewer = document.getElementById('pdf-viewer');
+            const iframe = document.getElementById('pdf-iframe');
+
+            // Set the iframe's source to the selected PDF
+            iframe.src = pdfPath;
+
+            // Display the PDF viewer
+            viewer.style.display = 'block';
+        }
+
+        // Function to close the PDF viewer
+        function closePDF() {
+            const viewer = document.getElementById('pdf-viewer');
+            const iframe = document.getElementById('pdf-iframe');
+
+            // Hide the viewer and reset the iframe source
+            viewer.style.display = 'none';
+            iframe.src = '';
+        }
+    </script>
+    <style>
+        /* Full-Screen PDF Viewer Styles */
+        #pdf-viewer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+        }
+
+        #pdf-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: none;
+            color: white;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #close-button:hover {
+            color: #cccccc;
+        }
+
+        .notes-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .note-item {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .note-item h3 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Class 11 Social Notes">
+            <h1>Class 11 Social Notes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notes-listing">
+            <h2 style="text-align: center;" >All Notes</h2>
+            <div class="notes-grid">
+                <!-- Unit 1 -->
+                <div class="note-item">
+                    <h3>Unit 1</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 1.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 2 -->
+                <div class="note-item">
+                    <h3>Unit 2</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 2.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 3 -->
+                <div class="note-item">
+                    <h3>Unit 3</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 3.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 4 -->
+                <div class="note-item">
+                    <h3>Unit 4</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 4.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 5 -->
+                <div class="note-item">
+                    <h3>Unit 5</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 5.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 6 -->
+                <div class="note-item">
+                    <h3>Unit 6</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 6.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 7 -->
+                <div class="note-item">
+                    <h3>Unit 7</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 7.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 8 -->
+                <div class="note-item">
+                    <h3>Unit 8</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 8.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 9 -->
+                <div class="note-item">
+                    <h3>Unit 9</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 9.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 10 -->
+                <div class="note-item">
+                    <h3>Unit 10</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 10.pdf')">View PDF</a>
+                </div>
+
+                <!-- Unit 11 -->
+                <div class="note-item">
+                    <h3>Unit 11</h3>
+                    <a href="#" onclick="openPDF('pdfs/UNIT 11.pdf')">View PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Class 11 Social Notes. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- Full-Screen PDF Viewer -->
+    <div id="pdf-viewer">
+        <button id="close-button" onclick="closePDF()">&times;</button>
+        <iframe id="pdf-iframe"></iframe>
+    </div>
+</body>
+</html>

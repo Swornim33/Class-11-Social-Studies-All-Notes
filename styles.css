@@ -1,0 +1,435 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Banner Styling */
+.main-banner {
+    background: url('education-banner.jpg') no-repeat center center / cover;
+    text-align: center;
+    color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-banner .welcome-message {
+    color: #ffffff; /* Changed to white for better contrast */
+}
+
+.main-banner .welcome-message h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #e3f2fd; /* Light blue for the heading */
+}
+
+.main-banner .welcome-message p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff; /* White for the paragraph */
+}
+
+.main-banner #search-bar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Featured Notes Section */
+.featured-notes {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-notes h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.featured-notes h4 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.featured-notes .notes-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-notes .note-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+.featured-notes .note-item h3 a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.featured-notes .note-item p {
+    margin: 10px 0;
+}
+
+.featured-notes .note-item a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-notes .note-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .main-banner .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-notes .note-item {
+        flex: 1 1 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        justify-content: center;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Banner Styling */
+.main-banner {
+    background: url('education-banner.jpg') no-repeat center center / cover;
+    text-align: center;
+    color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-banner .welcome-message h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #e3f2fd;
+}
+
+.main-banner .welcome-message p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.main-banner #search-bar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Units and Chapters Styling */
+.units h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.units .unit {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.units .unit h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+.units .unit ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.units .unit ul li {
+    margin: 10px 0;
+}
+
+.units .unit ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.units .unit ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-banner .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo {
+        justify-content: center;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Units and Chapters Styling */
+.units {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.units h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.units .unit {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the chapters */
+}
+
+.units .unit h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+.units .unit ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.units .unit ul li {
+    margin: 10px 0;
+}
+
+.units .unit ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333; /* Default text color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 2px solid transparent; /* No border initially */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Neutral background */
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.units .unit ul li a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+    border: 2px solid #007bff; /* Add border on hover */
+}

@@ -1,0 +1,36 @@
+/* Reset and General Styling */
+@import url('styles.css');
+
+/* Note Details */
+.note-details {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-details h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.note-details p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.note-details a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #003366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.note-details a:hover {
+    background: #00509e;
+}

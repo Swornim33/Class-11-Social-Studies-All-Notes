@@ -1,0 +1,41 @@
+/* Reset and General Styling */
+@import url('styles.css');
+
+/* Notes Grid */
+.notes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.note-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    text-align: left;
+}
+
+.note-item h3 a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+.note-item p {
+    margin: 10px 0;
+}
+
+.note-item a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.note-item a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+/* Reset and General Styling */
+@import url('styles.css');
+
+/* Subjects List */
+.subjects-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subjects-list h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subjects-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.subjects-list ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.subjects-list ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.subjects-list ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,23 @@
+/* Reset and General Styling */
+@import url('styles.css');
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
